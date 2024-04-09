@@ -63,7 +63,7 @@ export const AppWeather = () => {
                             </span><span> Inc</span>
                         <div className="desarrolloweb">
                             <a href="https://oiluj69.github.io/jcdesarrolloweb.github.io">
-                                Desarrollado por: JCDesarrolloWeb
+                                <span>Desarrollado por:</span> <span>JCDesarrolloWeb</span>
                             </a>
                         </div>
                     </div>

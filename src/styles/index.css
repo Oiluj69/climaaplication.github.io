@@ -5,10 +5,11 @@
 }
 
 body {
+  max-width: 100%;
   /* Para poder fijar el pie de página con posición absoluta */
   position: relative;
   /* Medida mínima */
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #root {
@@ -78,8 +79,7 @@ p {
   bottom: 0;
   /* Ocupar todo el ancho disponible */
   width: 100%;
-  min-height: 10vh;
-   
+  min-height: 10vh;   
   font-size: 18px;
   color: white;
    /* Solo para probar cómo se ve */
@@ -107,4 +107,37 @@ span {
 
 .desarrolloweb a:hover {
   color: rgb(31, 4, 207);
+}
+
+@media (max-width: 800px) {
+
+  .weather input {
+    width: 70%;
+  }  
+
+  button {
+    width: 20%;
+    margin-left: 1%;
+  }
+
+  #piepagina {
+    min-height: 8vh; 
+  }
+
+  .footer {
+    margin-left: 5%;
+  }
+
+  span {
+    margin-right: 1.5%;
+  }
+
+  .desarrolloweb {
+    padding-left: 20%;
+    margin-top: -8px;
+    font-size: 10px;
+    line-height: 2.5vh;
+  }
+  
+
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { componente } from "./component"
+import clima from "../../imagenes/clima.png"
 
 export const AppWeather = () => {
 
@@ -53,13 +54,13 @@ export const AppWeather = () => {
                 }
             </div>
             <div>
-                <img src="../imagenes/clima.png" alt="Logo" width={150} />
+                <img src={clima} alt="Clima Logo" width={150} />
             </div>
             <div id="piepagina">
-                <footer class="">
-                    <div class="footer">
-                        <span class="">&copy;</span><span class=""> 2024 </span><span
-                            class="">Clima,</span><span class=""> Inc</span>
+                <footer>
+                    <div className="footer">
+                        <span>&copy;</span><span> 2024 </span><span>Clima,
+                            </span><span> Inc</span>
                         <div className="desarrolloweb">
                             <a href="https://oiluj69.github.io/jcdesarrolloweb.github.io">
                                 Desarrollado por: JCDesarrolloWeb

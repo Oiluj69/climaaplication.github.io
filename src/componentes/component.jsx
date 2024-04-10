@@ -30,7 +30,6 @@ export const componente = () => {
         }
     }
 
-
     return (
         <div>componente</div>
     )

@@ -27,6 +27,10 @@ body {
   font-size: 50px;
 }
 
+.know {
+  padding: 0 0 20px 0;
+}
+
 .weather {
   max-width: 100%;
   height: 100vh;
@@ -48,7 +52,7 @@ body {
 
 .divisor {
   width: 100%;
-  height: 40vh;
+  height: 35vh;
 }
 
 button {
@@ -79,10 +83,10 @@ p {
   bottom: 0;
   /* Ocupar todo el ancho disponible */
   width: 100%;
-  min-height: 10vh;   
+  min-height: 10vh;
   font-size: 18px;
   color: white;
-   /* Solo para probar cómo se ve */
+  /* Solo para probar cómo se ve */
   background: linear-gradient(45deg, rgb(50, 19, 253), rgba(68, 136, 246, 0.921));
 }
 
@@ -113,15 +117,19 @@ span {
 
   .weather input {
     width: 70%;
-  }  
+  }
 
   button {
     width: 20%;
     margin-left: 1%;
   }
 
+  .actualizar {
+    font-size: 12px;
+  }
+
   #piepagina {
-    min-height: 8vh; 
+    min-height: 8vh;
   }
 
   .footer {
@@ -138,6 +146,6 @@ span {
     font-size: 10px;
     line-height: 2.5vh;
   }
-  
+
 
 }

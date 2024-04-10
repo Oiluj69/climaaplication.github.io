@@ -28,9 +28,16 @@ export const AppWeather = () => {
             setDataClima(data)
         } catch (error) {
             console.error('Ha ocurrido el siguiente problema:', error)
-            alert('Compruebe su conección a Internet')
         }
     }
+
+    const [buscar, setBuscar] = useState(null)
+
+    const cambio = () => {
+        setBuscar(!buscar)
+    }
+
+    const actualizar = () => setBuscar(window.location.replace(''))
 
     return (
         <div className="weather">
@@ -38,10 +45,23 @@ export const AppWeather = () => {
             <div>
                 <h1>Clima</h1>
             </div>
+            <div className="know">
+                <h2>Quiero saber el clima de:</h2>
+            </div>
             <div className="divisor">
                 <form onSubmit={handleSubmit} >
-                    <input type="text" value={ciudad} onChange={handleCambioCiudad} name="city" id="city" placeholder="Teclee la Ciudad" />
-                    <button type="submit">Buscar</button>
+                    <input type="text" value={ciudad} onChange={handleCambioCiudad} name="city" id="city" placeholder="Introdusca la Ciudad" />
+
+                    {
+                        buscar ? (
+                            <button type="submit" className="actualizar"  onClick={actualizar} >Actualizar</button>
+
+                        ) : (
+                            <button type="submit" onClick={cambio} >Buscar</button>
+                        )
+                    }
+
+
                 </form>
                 {
                     dataclima && (
@@ -60,7 +80,7 @@ export const AppWeather = () => {
                 <footer>
                     <div className="footer">
                         <span>&copy;</span><span> 2024 </span><span>Clima,
-                            </span><span> Inc</span>
+                        </span><span> Inc</span>
                         <div className="desarrolloweb">
                             <a href="https://oiluj69.github.io/jcdesarrolloweb.github.io">
                                 <span>Desarrollado por:</span> <span>JCDesarrolloWeb</span>
